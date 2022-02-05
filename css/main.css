@@ -376,3 +376,78 @@ body{
     font-size: 18px;
     color: #FF7010;
 }
+
+.deserts{
+    margin-top: 46px;
+}
+
+.deserts_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.deserts_header h2{
+    font-size: 40px;
+}
+
+.deserts_header button{
+    display: flex;
+    align-items: center;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    padding: 9px 16px;
+    background: #FFFF;
+}
+
+.deserts_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.deserts_tovars img[src="img/lable.png"]{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.deserts_tovars img[src="img/lable2.png"]{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.deserts_tovars .text{
+    padding: 0px 20px;
+    margin-top: 16px;
+}
+
+.deserts_tovars .text h3{
+    font-size: 18px;
+}
+
+.deserts_tovars .text p{
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.deserts_btn{
+    margin-top: 26px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deserts_btn button{
+    padding: 13px 32px;
+    background: #FF7010;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.deserts_btn h3{
+    font-size: 18px;
+    color: #FF7010;
+}
