@@ -451,3 +451,79 @@ body{
     font-size: 18px;
     color: #FF7010;
 }
+
+.drink{
+    margin-top: 46px;
+}
+
+.drink_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drink_header h2{
+    font-size: 40px;
+}
+
+.drink_header button{
+    display: flex;
+    align-items: center;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    padding: 9px 16px;
+    background: #FFFF;
+}
+
+.drink_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.drink_tovars img[src="img/lable.png"]{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.drink_tovars img[src="img/lable2.png"]{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.drink_tovars .text{
+    padding: 0px 20px;
+    margin-top: 16px;
+}
+
+.drink_tovars .text h3{
+    font-size: 18px;
+}
+
+.drink_tovars .text p{
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.drink_btn{
+    margin-top: 26px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drink_btn button{
+    padding: 13px 32px;
+    background: #FF7010;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.drink_btn h3{
+    font-size: 18px;
+    color: #FF7010;
+}
+
