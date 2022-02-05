@@ -653,3 +653,70 @@ body{
     font-size: 18px;
     color: #FF7010;
 }
+
+.about .text h2{
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 190px;
+}
+
+.about .text h3, .aboutp{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.about .text h3{
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+.blocs{
+    width: 850px;
+    height: 308px;
+    margin: 0 auto;
+}
+
+.footer .footer_content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    background: #fff;
+}
+
+.logo_footer p{
+    margin-top: 146px;
+    
+}
+
+.about_footer{
+    line-height: 30px;
+}
+
+.about_footer h2{
+    margin-bottom: 12px;
+}
+
+.help_footer{
+    line-height: 30px;
+}
+
+.help_footer h2{
+    margin-bottom: 12px;
+}
+
+.contacts{
+    max-width: 299px;
+    line-height: 30px;
+}
+
+.contacts h2{
+    margin-bottom: 20px;
+}
+
+.contacts img{
+    margin-right: 12px;
+}
