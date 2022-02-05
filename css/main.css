@@ -527,3 +527,64 @@ body{
     color: #FF7010;
 }
 
+.block_mini{
+    width: 300px;
+    height: 424px;
+    border-radius: 12px;
+    background: #FFFF;
+}
+
+.souse{
+    margin-top: 46px;
+}
+
+.souse_header h2{
+    font-size: 40px;
+}
+
+.souse_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.souse_tovars img[src="img/lable.png"]{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.souse_tovars img[src="img/lable2.png"]{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.souse_tovars .text{
+    padding: 0px 20px;
+    margin-top: 16px;
+}
+
+.souse_tovars .text h3{
+    font-size: 18px;
+}
+
+.souse_btn{
+    margin-top: 26px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.souse_btn button{
+    padding: 13px 32px;
+    background: #FF7010;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.souse_btn h3{
+    font-size: 18px;
+    color: #FF7010;
+}
