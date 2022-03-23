@@ -17,11 +17,56 @@ body{
 .header__head{
     border-bottom: 1px solid #f0f0f0;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left{
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__fall-item{
     padding: 0 20px 0 28px;
-    
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__fall-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 13px;
+    height: 20px;
+    margin-left: 3.5px;
+    background: url("../img/address.svg") no-repeat center;
+}
+
+.header__fall-item::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 23%;
+    width: 12px;
+    height: 12px;
+    background: url("../img/Arrow down.svg") no-repeat center;
+}
+
+.header__left li + li{
+    margin-left: 40px;
+}
+
+.header__item{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #191910;
+}
+
+.header__item span {
+    font-weight: 700;
 }
 
 /* header end */
@@ -688,19 +733,6 @@ body{
 
 .contacts h2{
     margin-bottom: 20px;
-}
-
-.conttt{
-    display: flex;
-}
-
-.contacts img[src="img/Vector22.png"]{
-    margin-left: 24px;
-}
-
-.contact_fb, .contact_ig{
-    display: flex;
-    align-items: center;
 }
 
 .contacts img{
