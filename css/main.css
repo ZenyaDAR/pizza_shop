@@ -14,14 +14,20 @@ body{
     background-color: #fff;
 }
 
+/* header head start */
+
 .header__head{
     border-bottom: 1px solid #f0f0f0;
     padding: 10px 0;
+}
+
+.menu{
     display: flex;
     justify-content: space-between;
 }
 
-.header__left{
+/* header left start */
+.header__left, .header__right{
     display: flex;
     justify-content: space-between;
 }
@@ -68,6 +74,31 @@ body{
 .header__item span {
     font-weight: 700;
 }
+/* header left end */
+/* header right start */
+
+.header__right li + li{
+    margin-left: 40px;
+}
+
+.header__acc-item{
+    padding-left: 28px;
+    position: relative;
+}
+
+.header__acc-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    background: url("../img/Account.svg") no-repeat center;
+}
+
+/* header right end */
+/* header head end */
 
 /* header end */
 .nav_fill{
