@@ -690,6 +690,19 @@ body{
     margin-bottom: 20px;
 }
 
+.conttt{
+    display: flex;
+}
+
+.contacts img[src="img/Vector22.png"]{
+    margin-left: 24px;
+}
+
+.contact_fb, .contact_ig{
+    display: flex;
+    align-items: center;
+}
+
 .contacts img{
     margin-right: 12px;
 }
