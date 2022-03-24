@@ -275,6 +275,45 @@ body{
     color: #FF7010;
 }
 
+.popup{
+    
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    backdrop-filter: blur(32px);
+    background: rgba(25, 25, 25, 0.4);
+}
+
+.popup_body{
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    max-height: 600px;
+    width: 990px;
+    border-radius: 24px;
+}
+
+.popup_content{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.popup_photo_content{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 95px;
+    img{
+        width: 450px;
+        height: 450px;
+    }
+}
+
 .marg{
     margin-top: 30px;
 }
