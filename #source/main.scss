@@ -1,6 +1,26 @@
+$main: #FF7010;
+$gray: #F0F0F0;
+$hover: #FF6600;
+
+button{
+    border: 0;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: $main;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 body{
     background: #F0F0F0;
     font-family: inter;
+    color: #191910;
 }
 
 .container{
@@ -17,7 +37,6 @@ body{
 /* header head start */
 
 .header__head{
-    border-bottom: 1px solid #f0f0f0;
     padding: 10px 0;
 }
 
@@ -37,27 +56,25 @@ body{
     display: inline;
     position: relative;
     cursor: pointer;
-}
-
-.header__fall-item::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 13px;
-    height: 20px;
-    margin-left: 3.5px;
-    background: url("../img/address.svg") no-repeat center;
-}
-
-.header__fall-item::after{
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 23%;
-    width: 12px;
-    height: 12px;
-    background: url("../img/Arrow down.svg") no-repeat center;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 13px;
+        height: 20px;
+        margin-left: 3.5px;
+        background: url("../img/address.svg") no-repeat center;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 23%;
+        width: 12px;
+        height: 12px;
+        background: url("../img/Arrow down.svg") no-repeat center;
+    }
 }
 
 .header__left li + li{
@@ -69,11 +86,15 @@ body{
     line-height: 18px;
     font-weight: 400;
     color: #191910;
+    transition: 0.3s;
+    span{
+        font-weight: 700;
+    }
+    &:hover{
+        color: $main;
+    }
 }
 
-.header__item span {
-    font-weight: 700;
-}
 /* header left end */
 /* header right start */
 
@@ -84,22 +105,43 @@ body{
 .header__acc-item{
     padding-left: 28px;
     position: relative;
-}
-
-.header__acc-item::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    margin-left: 2px;
-    background: url("../img/Account.svg") no-repeat center;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        margin-left: 2px;
+        background: url("../img/Account.svg") no-repeat center;
+    }
 }
 
 /* header right end */
 /* header head end */
+/* header foot start */
 
+.header__foot-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__btn{
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    img {
+        padding-right: 8px;
+    }
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
+}
+
+/* header foot end */
 /* header end */
 .nav_fill{
     display: flex;
@@ -191,6 +233,11 @@ body{
     border: none;
     border-radius: 6px;
     color: #fff;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .tovars_pizza{
@@ -268,6 +315,11 @@ body{
     border-radius: 6px;
     border: none;
     color: white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .pizza_btn h3{
@@ -382,6 +434,11 @@ body{
     border-radius: 6px;
     border: none;
     color: white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .susi_btn h3{
@@ -458,6 +515,11 @@ body{
     border-radius: 6px;
     border: none;
     color: white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .snacs_btn h3{
@@ -533,6 +595,11 @@ body{
     border-radius: 6px;
     border: none;
     color: white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .deserts_btn h3{
@@ -608,6 +675,11 @@ body{
     border-radius: 6px;
     border: none;
     color: white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .drink_btn h3{
@@ -670,6 +742,11 @@ body{
     border-radius: 6px;
     border: none;
     color: white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .souse_btn h3{
@@ -735,6 +812,11 @@ body{
     border-radius: 6px;
     border: none;
     color: white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $hover;
+        box-shadow: 0 0 15px $main;
+    }
 }
 
 .combo_btn h3{
