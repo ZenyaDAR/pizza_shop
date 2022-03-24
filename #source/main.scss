@@ -812,6 +812,7 @@ body{
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
+    padding-top: 32px;
 }
 
 .footer{
@@ -820,7 +821,11 @@ body{
 
 .logo_footer p{
     margin-top: 146px;
-    
+}
+
+.logo_footer>.logo{
+    display: flex;
+    align-items: center;
 }
 
 .about_footer{
@@ -846,6 +851,22 @@ body{
 
 .contacts h2{
     margin-bottom: 20px;
+}
+
+.contact_fb, .contact_ig{
+    display: flex;
+    align-items: center;
+    p{
+        margin-right: 24px;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.conttt{
+    display: flex;
 }
 
 .contacts img{
