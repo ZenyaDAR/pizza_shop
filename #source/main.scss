@@ -2,6 +2,10 @@ $main: #FF7010;
 $gray: #F0F0F0;
 $hover: #FF6600;
 
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
 button{
     border: 0;
     cursor: pointer;
@@ -15,6 +19,12 @@ button{
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+}
+
+.header__foot.active{
+    position: fixed;
+    top: 0;
+    padding: 12px 0;
 }
 
 body{
@@ -32,6 +42,11 @@ body{
 
 .header__head, .header__foot{
     background-color: #fff;
+    width: 100%;
+}
+
+.header__foot{
+    z-index: 2;
 }
 
 /* header head start */
@@ -138,6 +153,62 @@ body{
     &:hover{
         background-color: $hover;
         box-shadow: 0 0 15px $main;
+    }
+}
+
+.menu__list-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > li + li {
+        margin-left: 32px;
+    }
+    > li:last-child{
+        cursor: pointer;
+        position: relative;   
+        padding-right: 20px;
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 23%;
+            width: 12px;
+            height: 12px;
+            background: url("../img/Arrow down.svg") no-repeat center;
+        } 
+        p{
+            user-select: none;
+        }
+    }
+}
+
+.menu__inner{
+    display: none;
+    position: absolute;
+    left: -150%;
+    margin-top: 31px;
+    background-color: #fff;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.1);
+    border-radius: 12px;
+    width: 265px;
+    height: 304px;
+    padding: 26px 20px;
+    > li + li {
+        margin-top: 16px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 8px;
+        border-bottom: 8px solid #fff;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -2.5%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
     }
 }
 
