@@ -16,3 +16,81 @@ document.addEventListener('scroll', () => {
         header.classList.remove('active')
     }
 })
+
+const popup = document.querySelector("#popup")
+const btnpz = document.querySelector(".btn_pizza")
+const btnpras = document.querySelector(".total_prise")
+
+btnpz.addEventListener('click', () =>{
+    popup.classList.add('active')
+})
+
+btnpras,addEventListener('click', () =>{
+    popup.classList.remove('active')
+})
+
+
+
+const btnTrad = document.querySelector("#btn1")
+const btnTon = document.querySelector("#btn2")
+
+btnTrad.addEventListener('click', () =>{
+    btnTon.classList.remove('active')
+    btnTrad.classList.add('active')
+})
+
+btnTon.addEventListener('click', () =>{
+    btnTrad.classList.remove('active')
+    btnTon.classList.add('active')
+})
+
+const btn20sm = document.querySelector("#btn3")
+const btn28sm = document.querySelector("#btn4")
+const btn33sm = document.querySelector("#btn5")
+
+btn20sm.addEventListener('click', () =>{
+    btn28sm.classList.remove('active')
+    btn33sm.classList.remove('active')
+    btn20sm.classList.add('active')
+})
+btn28sm.addEventListener('click', () =>{
+    btn20sm.classList.remove('active')
+    btn33sm.classList.remove('active')
+    btn28sm.classList.add('active')
+})
+btn33sm.addEventListener('click', () =>{
+    btn28sm.classList.remove('active')
+    btn20sm.classList.remove('active')
+    btn33sm.classList.add('active')
+})
+
+
+const con1 = document.querySelector("#container1")
+const con2 = document.querySelector("#container2")
+const con3 = document.querySelector("#container3")
+const con4 = document.querySelector("#container4")
+
+con1.addEventListener('click', () =>{
+    con2.classList.remove('active')
+    con3.classList.remove('active')
+    con4.classList.remove('active')
+    con1.classList.add('active')
+})
+con2.addEventListener('click', () =>{
+    con1.classList.remove('active')
+    con3.classList.remove('active')
+    con4.classList.remove('active')
+    con2.classList.add('active')
+})
+con3.addEventListener('click', () =>{
+    con2.classList.remove('active')
+    con1.classList.remove('active')
+    con4.classList.remove('active')
+    con3.classList.add('active')
+})
+con4.addEventListener('click', () =>{
+    con2.classList.remove('active')
+    con3.classList.remove('active')
+    con1.classList.remove('active')
+    con4.classList.add('active')
+})

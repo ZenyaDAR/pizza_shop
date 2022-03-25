@@ -410,6 +410,10 @@ body{
     background: rgba(25, 25, 25, 0.4);
 }
 
+.popup.active{
+    display: block;
+}
+
 .popup_body{
     margin-top: 17px;
     margin-left: auto;
@@ -532,6 +536,34 @@ body{
             color: #000;
         }
     }
+}
+
+.content_4_total{
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    p{
+        color: #FF7010;
+        font-size: 20px;
+        font-weight: 600;
+        span{
+            color: #A5A5A5;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.container_content.active{
+    border: solid 2px #FF7010;
+}
+
+.total_prise{
+    padding: 13px 40px;
+    background: #FF7010;
+    color: white;
+    border-radius: 6px;
+    margin-left: 100px;
 }
 
 .marg{
