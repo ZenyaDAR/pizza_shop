@@ -397,8 +397,8 @@ body{
     font-size: 18px;
     color: #FF7010;
 }
-
-.popup{
+// Pop up №1
+.popup, .popup_2{
     display: none;
     position: fixed;
     height: 100%;
@@ -569,6 +569,82 @@ body{
         border: solid 1px #FF7010;
         background: none;
         color: #FF7010;
+    }
+}
+// Pop up №2
+.popup_2.active{
+    display: block;
+}
+
+.popup_2_body{
+    height: 100vh;
+    width: 520px;
+    top: 0;
+    margin-left:calc(100% - 520px);
+    background: #fff;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-right: 10px;
+}
+
+.popup_2_name{
+    display: flex;
+    justify-content: space-between;
+    h2{
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+}
+
+.fillters_btn{
+    h3{
+        font-size: 16px;
+        color: #A5A5A5;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+    button{
+        background: rgba(158, 157, 157, 0.205);
+        padding: 11px 20px;
+        border-radius: 6px;
+        color: #000;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        font-family: inter;        
+    }
+    button.active{
+        background: #FF7010;
+        color: #FFF;
+    }
+}
+.popup_2_fillter_1{
+    max-width: 380px;
+}
+
+.popup_2_fillter_2{
+    max-width: 415px;
+}
+
+.popup_2_fillter_3{
+    max-width: 480px;
+}
+
+.nav_filters{
+    display: flex;
+    margin-top: 41px;
+    #navBtnFill1{
+        padding: 13px 77px;
+        border: solid 1px #FF7010;
+        border-radius: 6px;
+        color: #FF7010;
+        margin-right: 20px;
+    }
+    #navBtnFill2{
+        padding: 13px 70.5px;
+        background: #FF7010;
+        border-radius: 6px;
+        color: #fff;
     }
 }
 

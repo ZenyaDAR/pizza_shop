@@ -152,7 +152,7 @@
                 <div class="pizza">
                     <div class="pizza_header">
                         <h2 id="pizza">Пицца</h2>
-                        <button><img src="img/Filter.png">Фильтры</button>
+                        <button class="fillter"><img src="img/Filter.png">Фильтры</button>
                     </div>
                     <div class="pizza_cards">
                         <div class="block pizza1 pizza_tovars">
@@ -249,6 +249,7 @@
                 </div>
             </div>
         </div>
+<!-- Pop up №1 -->
         <div class="popup" id="popup">
             <div class="popup_container">
                 <div class="popup_body">
@@ -351,12 +352,59 @@
                 </div>
             </div>
         </div>
+<!-- Pop up №2 -->
+        <div class="popup_2">
+            <div class="popup_2_body">
+                <div class="popup_2_content">
+                    <div class="popup_2_name">
+                        <h2>Фильтры</h2>
+                        <img id="cross" src="img/Cross.svg">
+                    </div>
+                    <div class="popup_2_fillter_1 fillters_btn">
+                        <h3>Общее</h3>
+                        <button class="btn_fill">Хит</button>
+                        <button class="btn_fill">Новинка</button>
+                        <button class="btn_fill">С мясом</button>
+                        <button class="btn_fill">Вегетарианская</button>
+                        <button class="btn_fill">С курицей</button>
+                        <button class="btn_fill">Без лука</button>
+                        <button class="btn_fill">С грибами</button>
+                        <button class="btn_fill">С моркпродуктами</button>
+                        <button class="btn_fill">Барбекю</button>
+                    </div>
+                    <div class="popup_2_fillter_2 fillters_btn">
+                        <h3>Сыр</h3>
+                        <button class="btn_fill">Реджанито</button>
+                        <button class="btn_fill">Моцарелла</button>
+                        <button class="btn_fill">Чеддер</button>
+                        <button class="btn_fill">С голубой плесенью</button>
+                        <button class="btn_fill">Смесь итальянских сыров</button>
+                        <button class="btn_fill">Мягкий молодой сыр</button>
+                    </div>
+                    <div class="popup_2_fillter_3 fillters_btn">
+                        <h3>Мясо</h3>
+                        <button class="btn_fill">Пепперони</button>
+                        <button class="btn_fill">Свинина</button>
+                        <button class="btn_fill">Ветчина</button>
+                        <button class="btn_fill">Бекон</button>
+                        <button class="btn_fill">Говядина</button>
+                        <button class="btn_fill">Чоризо</button>
+                        <button class="btn_fill">Колбаски</button>
+                        <button class="btn_fill">Куриная грудка</button>
+                    </div>
+                    <div class="nav_filters">
+                        <button id="navBtnFill1">Сбросить</button>
+                        <button id="navBtnFill2">Применить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="tovars_susi">
             <div class="container">
                 <div class="susi">
                     <div class="susi_header">
                         <h2 id="susi">Суши</h2>
-                        <button><img src="img/Filter.png">Фильтры</button>
+                        <button class="fillter"><img src="img/Filter.png">Фильтры</button>
                     </div>
                     <div class="susi_cards">
                         <div class="block susi1 susi_tovars">
@@ -366,7 +414,7 @@
                                 <h3>Филадельфия кранч</h3>
                                 <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 475 ₽</h3>
                                 </div>
                             </div>
@@ -378,7 +426,7 @@
                                 <h3>Филадельфия крем-брюле</h3>
                                 <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 395 ₽</h3>
                                 </div>
                             </div>
@@ -389,7 +437,7 @@
                                 <h3>Супер Филадельфия</h3>
                                 <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 425 ₽</h3>
                                 </div>
                             </div>
@@ -400,7 +448,7 @@
                                 <h3>Тигр мама</h3>
                                 <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 525 ₽</h3>
                                 </div>
                             </div>
@@ -411,7 +459,7 @@
                                 <h3>Тигр мама</h3>
                                 <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 525 ₽</h3>
                                 </div>
                             </div>
@@ -422,7 +470,7 @@
                                 <h3>Супер Филадельфия</h3>
                                 <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 425 ₽</h3>
                                 </div>
                             </div>
@@ -433,7 +481,7 @@
                                 <h3>Филадельфия кранч</h3>
                                 <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 475 ₽</h3>
                                 </div>
                             </div>
@@ -444,7 +492,7 @@
                                 <h3>Филадельфия крем-брюле</h3>
                                 <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
                                 <div class="susi_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 395 ₽</h3>
                                 </div>
                             </div>
@@ -458,7 +506,7 @@
                 <div class="snacs">
                     <div class="snacs_header">
                         <h2 id="snacs">Закуски</h2>
-                        <button><img src="img/Filter.png">Фильтры</button>
+                        <button class="fillter"><img src="img/Filter.png">Фильтры</button>
                     </div>
                     <div class="snacs_cards">
                         <div class="block snacs1 snacs_tovars">
@@ -468,7 +516,7 @@
                                 <h3>Филадельфия кранч</h3>
                                 <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 475 ₽</h3>
                                 </div>
                             </div>
@@ -480,7 +528,7 @@
                                 <h3>Филадельфия крем-брюле</h3>
                                 <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 395 ₽</h3>
                                 </div>
                             </div>
@@ -491,7 +539,7 @@
                                 <h3>Супер Филадельфия</h3>
                                 <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 425 ₽</h3>
                                 </div>
                             </div>
@@ -502,7 +550,7 @@
                                 <h3>Тигр мама</h3>
                                 <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 525 ₽</h3>
                                 </div>
                             </div>
@@ -513,7 +561,7 @@
                                 <h3>Тигр мама</h3>
                                 <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 525 ₽</h3>
                                 </div>
                             </div>
@@ -524,7 +572,7 @@
                                 <h3>Супер Филадельфия</h3>
                                 <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 425 ₽</h3>
                                 </div>
                             </div>
@@ -535,7 +583,7 @@
                                 <h3>Филадельфия крем-брюле</h3>
                                 <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 395 ₽</h3>
                                 </div>
                             </div>
@@ -546,7 +594,7 @@
                                 <h3>Филадельфия кранч</h3>
                                 <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
                                 <div class="snacs_btn">
-                                    <button>Выбрать</button>
+                                    <button class="btnpop">Выбрать</button>
                                     <h3>от 475 ₽</h3>
                                 </div>
                             </div>
@@ -560,7 +608,7 @@
                 <div class="deserts">
                     <div class="deserts_header">
                         <h2 id="desert">Десерты</h2>
-                        <button><img src="img/Filter.png">Фильтры</button>
+                        <button class="fillter"><img src="img/Filter.png">Фильтры</button>
                     </div>
                     <div class="deserts_cards">
                         <div class="block deserts1 deserts_tovars">
@@ -662,7 +710,7 @@
                 <div class="drink">
                     <div class="drink_header">
                         <h2 id="drink">Напитки</h2>
-                        <button><img src="img/Filter.png">Фильтры</button>
+                        <button class="fillter"><img src="img/Filter.png">Фильтры</button>
                     </div>
                     <div class="drink_cards">
                         <div class="block drink1 drink_tovars">

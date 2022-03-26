@@ -92,3 +92,31 @@ con3.addEventListener('click', () =>{
 con4.addEventListener('click', () =>{
     con4.classList.toggle('active')
 })
+
+
+const btnspopup2 = document.querySelectorAll(".fillter")
+const popup_2 = document.querySelector(".popup_2")
+const cross = document.querySelector("#cross")
+const btnsFill = document.querySelectorAll(".btn_fill")
+const navBtnFill = document.querySelector("#navBtnFill1")
+
+
+for(let btnpopup2 of btnspopup2){
+    btnpopup2.addEventListener('click', () =>{
+        popup_2.classList.add('active')
+    })
+
+    for(let btnFill of btnsFill){
+        btnFill.addEventListener('click', () =>{
+            btnFill.classList.toggle('active')
+        })
+        cross.addEventListener('click', () =>{
+            popup_2.classList.remove('active')
+            btnFill.classList.remove('active')
+        })
+        navBtnFill.addEventListener('click', () =>{
+            btnFill.classList.remove('active')
+        })
+    }
+    
+}
