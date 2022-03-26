@@ -18,17 +18,27 @@ document.addEventListener('scroll', () => {
 })
 
 const popup = document.querySelector("#popup")
-const btnpz = document.querySelector(".btn_pizza")
-const btnpras = document.querySelector(".total_prise")
+const btnpizzs = document.querySelectorAll(".btnpop")
+const btncon = document.querySelector(".total_prise")
 
-btnpz.addEventListener('click', () =>{
-    popup.classList.add('active')
-})
-
-btnpras,addEventListener('click', () =>{
-    popup.classList.remove('active')
-})
-
+for (let btnpizz of btnpizzs){
+    btnpizz.addEventListener('click', () =>{
+        popup.classList.add('active')
+    })
+    
+    btncon.addEventListener('click', () =>{
+        popup.classList.remove('active')
+        btn28sm.classList.remove('active')
+        btn20sm.classList.remove('active')
+        btn33sm.classList.remove('active')
+        btnTon.classList.remove('active')
+        btnTrad.classList.remove('active')
+        con1.classList.remove('active')
+        con2.classList.remove('active')
+        con3.classList.remove('active')
+        con4.classList.remove('active')
+    })
+}
 
 
 const btnTrad = document.querySelector("#btn1")
@@ -71,26 +81,14 @@ const con3 = document.querySelector("#container3")
 const con4 = document.querySelector("#container4")
 
 con1.addEventListener('click', () =>{
-    con2.classList.remove('active')
-    con3.classList.remove('active')
-    con4.classList.remove('active')
-    con1.classList.add('active')
+    con1.classList.toggle('active')
 })
 con2.addEventListener('click', () =>{
-    con1.classList.remove('active')
-    con3.classList.remove('active')
-    con4.classList.remove('active')
-    con2.classList.add('active')
+    con2.classList.toggle('active')
 })
 con3.addEventListener('click', () =>{
-    con2.classList.remove('active')
-    con1.classList.remove('active')
-    con4.classList.remove('active')
-    con3.classList.add('active')
+    con3.classList.toggle('active')
 })
 con4.addEventListener('click', () =>{
-    con2.classList.remove('active')
-    con3.classList.remove('active')
-    con1.classList.remove('active')
-    con4.classList.add('active')
+    con4.classList.toggle('active')
 })

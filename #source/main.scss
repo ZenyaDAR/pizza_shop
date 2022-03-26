@@ -564,6 +564,12 @@ body{
     color: white;
     border-radius: 6px;
     margin-left: 100px;
+    transition: .2s;
+    &:hover{
+        border: solid 1px #FF7010;
+        background: none;
+        color: #FF7010;
+    }
 }
 
 .marg{
