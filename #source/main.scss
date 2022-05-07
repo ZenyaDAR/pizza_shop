@@ -211,6 +211,29 @@ body{
         transform: translate(-50%);
     }
 }
+.tovar_bag{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 123px;
+    background: white;
+    padding: 12px 32px;
+    border-radius: 58px;
+    transition: all 1s;
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #191919;
+    }
+}
+
+.tovar_bag.active{
+    display: block;
+    opacity: 1;
+}
+
 
 /* header foot end */
 /* header end */
@@ -558,7 +581,7 @@ body{
     border: solid 2px #FF7010;
 }
 
-.total_prise{
+.total_btn{
     padding: 13px 40px;
     background: #FF7010;
     color: white;
@@ -595,6 +618,10 @@ body{
         font-weight: 600;
         margin-bottom: 20px;
     }
+}
+
+.cross{
+    cursor: pointer;
 }
 
 .fillters_btn{

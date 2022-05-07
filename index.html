@@ -20,7 +20,7 @@
                         <div class="container">
                             <nav class="menu"> <!-- content -->
                                 <ul class="header__left">
-                                    <li><p class="header__item header__fall-item">Москва</p></li>
+                                    <li><p class="header__item header__fall-item">Харьков</p></li>
                                     <li><a href="#" class="header__item">Проверить адрес</a></li>
                                     <li><a href="#" class="header__item">Среднее время доставки<span>*:00:24:19</span></a></li>
                                 </ul>
@@ -63,7 +63,10 @@
                                         </li>
                                     </ul>
                                 </nav>   
-                                <button type="button" class="header__btn btn"><img src="img/Shopping bag.svg" alt="shop bag"> 0 ₽</button>
+                                <button type="button" class="header__btn btn" ><img src="img/Shopping bag.svg" alt="shop bag"> <div id="prise"></div></button>
+                                <ul class="tovar_bag animate__animated animate__fadeInUp">
+                                    <li><p>Товар добавлен в корзину</p></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -343,7 +346,7 @@
                                 <div class="content_4">
                                     <div class="content_4_total">
                                         <p>Итого: 379 ₽ <span>400 г</span></p>
-                                        <button class="total_prise">Добавить</button>
+                                        <button class="total_btn">Добавить</button>
                                     </div>
                                 </div>
                             </div>
@@ -358,7 +361,7 @@
                 <div class="popup_2_content">
                     <div class="popup_2_name">
                         <h2>Фильтры</h2>
-                        <img id="cross" src="img/Cross.svg">
+                        <img id="cross" class="cross" src="img/Cross.svg">
                     </div>
                     <div class="popup_2_fillter_1 fillters_btn">
                         <h3>Общее</h3>

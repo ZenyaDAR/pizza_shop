@@ -19,26 +19,39 @@ document.addEventListener('scroll', () => {
 
 const popup = document.querySelector("#popup")
 const btnpizzs = document.querySelectorAll(".btnpop")
-const btncon = document.querySelector(".total_prise")
+const btncon = document.querySelector(".total_btn")
+const totalmessage = document.querySelector('.tovar_bag')
+let prises = 0
+const prise = document.querySelector('#prise')
+
 
 for (let btnpizz of btnpizzs){
     btnpizz.addEventListener('click', () =>{
         popup.classList.add('active')
     })
     
-    btncon.addEventListener('click', () =>{
-        popup.classList.remove('active')
-        btn28sm.classList.remove('active')
-        btn20sm.classList.remove('active')
-        btn33sm.classList.remove('active')
-        btnTon.classList.remove('active')
-        btnTrad.classList.remove('active')
-        con1.classList.remove('active')
-        con2.classList.remove('active')
-        con3.classList.remove('active')
-        con4.classList.remove('active')
-    })
+    
 }
+btncon.addEventListener('click', () =>{
+    popup.classList.remove('active')
+    btn28sm.classList.remove('active')
+    btn20sm.classList.remove('active')
+    btn33sm.classList.remove('active')
+    btnTon.classList.remove('active')
+    btnTrad.classList.remove('active')
+    con1.classList.remove('active')
+    con2.classList.remove('active')
+    con3.classList.remove('active')
+    con4.classList.remove('active')
+    totalmessage.classList.add('active')
+    prise.innerHTML = prises + 100 + ' ₽'
+    setTimeout(() =>{
+        totalmessage.classList.remove('active')
+        
+    }, 2500)
+})
+
+prise.innerHTML = prises + ' ₽'
 
 
 const btnTrad = document.querySelector("#btn1")
