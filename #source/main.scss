@@ -6,6 +6,17 @@ $hover: #FF6600;
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+    background: none;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: $main;
+    border-radius: 10px;
+    border:  solid 4px $hover;
+}
+
 button{
     border: 0;
     cursor: pointer;
@@ -210,7 +221,11 @@ body{
         right: 50%;
         transform: translate(-50%);
     }
-}
+    &.active{
+        display: block;
+    }
+   
+} 
 .tovar_bag{
     opacity: 0;
     display: none;
@@ -421,7 +436,7 @@ body{
     color: #FF7010;
 }
 // Pop up №1
-.popup, .popup_2{
+.popup, .popup_2 , .popup_3{
     display: none;
     position: fixed;
     height: 100%;
@@ -433,7 +448,7 @@ body{
     background: rgba(25, 25, 25, 0.4);
 }
 
-.popup.active{
+.popup.active , .popup_2.active , .popup_3.active{
     display: block;
 }
 
@@ -595,9 +610,6 @@ body{
     }
 }
 // Pop up №2
-.popup_2.active{
-    display: block;
-}
 
 .popup_2_body{
     height: 100vh;
@@ -674,6 +686,140 @@ body{
         color: #fff;
     }
 }
+//popup3
+.popup_3_body{
+    top: 0;
+    margin-left:calc(100% - 420px);
+    width: 420px;
+    height: 100vh;
+    background: white;
+    overflow-y: auto;
+}
+
+.popup_3_content{
+    padding: 20px 20px;
+    height: 100%;
+}
+
+.popup_3_nav{
+    display: flex;
+    justify-content: space-between;
+    h2{
+        font-weight: 600;
+        font-size: 32px;
+        color: #191919;
+    }
+}
+
+#popup_3_cross{
+    cursor: pointer;
+}
+
+.popup_3_bag{
+    min-height: calc(100% - 85px);
+}
+
+.bag_card_1 , .bag_card_2 , .bag_card_3 , .bag_card_4 ,.bag_card_5{
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 126px;
+    border: solid 1px #F0F0F0;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bag_card_1.active , .bag_card_2.active , .bag_card_3.active , .bag_card_4.active ,.bag_card_5.active{
+    display: block;
+}
+
+.bag_card_content{
+    display: flex;
+}
+.bag_card_img{
+    img{
+        height: 94px;
+        width: 94px;
+    }
+}
+
+.bag_card_text{
+    margin-left: 16px;
+    width: 100%;
+    h3{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    p{
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.calc_and_prise{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.calck{
+    width: 92px;
+    height: 36px;
+    background: #FFEEE2;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    
+    img{
+        cursor: pointer;
+        width: 10px;
+        height: 8px;
+        margin-top: 5.5px;
+    }
+}
+.calc_number1, .calc_number2, .calc_number3,.calc_number4,.calc_number5{
+    margin-top: 1px;
+    font-weight: 600;
+    font-size: 16px;
+    color: $main;
+}
+
+.bag_prise{
+    font-weight: 600;
+    font-size: 16px;
+    color: $main;
+}
+
+.finish_step{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+
+.finish_prise{
+    font-weight: 600;
+    font-size: 20px;
+    color: $main;
+}
+
+.finish_btn{
+    button{
+        background: #FF7010;
+        border-radius: 6px;
+        padding: 13px 24px;
+        font-weight: 400;
+        font-size: 16px;
+        a{
+            color: white;
+        }
+    }
+
+}
+
 
 .marg{
     margin-top: 30px;
@@ -1219,4 +1365,46 @@ body{
 
 .contacts img{
     margin-right: 12px;
+}
+
+.complete_content{
+    width: 100%;
+}
+
+.complete_box{
+    margin-top: calc(45% - 369px);
+    margin-left: calc(47% - 170px);
+    width: 380px;
+    height: 369px;
+    text-align: center;
+    h2{
+        margin-top: 48px;
+    }
+    p.hh{
+        margin-top: 16px;
+    }
+    p{
+        
+        max-width: 370px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.footer.complete{
+    margin-top: 288px;
+}
+
+.complete_btn{
+    padding: 13px 32px;
+    background: $main;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: inter;
+    margin-top: 24px;
+    a{
+        color: white;
+    }
 }
