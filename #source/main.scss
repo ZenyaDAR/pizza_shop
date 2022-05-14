@@ -810,12 +810,10 @@ body{
     button{
         background: #FF7010;
         border-radius: 6px;
+        color: white;
         padding: 13px 24px;
         font-weight: 400;
         font-size: 16px;
-        a{
-            color: white;
-        }
     }
 
 }
@@ -1398,13 +1396,11 @@ body{
 
 .complete_btn{
     padding: 13px 32px;
+    color: white;
     background: $main;
     border-radius: 6px;
     font-weight: 400;
     font-size: 16px;
     font-family: inter;
     margin-top: 24px;
-    a{
-        color: white;
-    }
 }
